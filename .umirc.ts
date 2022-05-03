@@ -11,6 +11,11 @@ export default defineConfig({
       component: '@/pages/course01/index',
       name: '01 setup and triangle',
     },
+    {
+      path: '/course02',
+      component: '@/pages/course02/index',
+      name: '02 rotating 3D Cube',
+    },
   ],
   layout: {},
   fastRefresh: {},
