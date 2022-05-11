@@ -1,7 +1,7 @@
 // advanced-form
 // 对getFieldsValue与setFieldsValue重写的表单
 import React from 'react';
-import { Button, Form } from 'antd';
+import { Button, Form, Input } from 'antd';
 import { GlobalForm, GlobalFormItem } from '@/components/advanced-form';
 import DebounceSelect from '@/components/DebounceSelect';
 
@@ -58,7 +58,9 @@ const DayjsForm: React.FC = () => {
             fetchOptions={fetchData}
           ></DebounceSelect>
         </GlobalFormItem>
-
+        <Form.Item label="还好吧" name="isOk">
+          <Input></Input>
+        </Form.Item>
         <GlobalFormItem>
           <Button onClick={handleFinish}>提交</Button>
         </GlobalFormItem>

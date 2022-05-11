@@ -4,6 +4,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  mfsu: {},
   routes: [
     { path: '/', component: '@/pages/home/index', name: '首页' },
     {
