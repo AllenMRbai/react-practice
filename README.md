@@ -1,4 +1,6 @@
-# umi project
+# 实验环境
+
+这是一个实验与练习用的项目
 
 ## Getting Started
 

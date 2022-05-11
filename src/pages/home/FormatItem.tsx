@@ -1,3 +1,5 @@
+// advanced-form
+// 对getFieldsValue与setFieldsValue重写的表单
 import React from 'react';
 import { Button, Form } from 'antd';
 import { GlobalForm, GlobalFormItem } from '@/components/advanced-form';
