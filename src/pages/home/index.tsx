@@ -1,6 +1,8 @@
 import styles from './index.less';
 import { Form, Select, Button, Card } from 'antd';
 import TreeForm from './TreeForm';
+import DayjsForm from './DayjsForm';
+import FormatItem from './FormatItem';
 
 const { Item } = Form;
 
@@ -14,6 +16,12 @@ export default function IndexPage() {
 
   return (
     <div style={{ padding: 24 }}>
+      <Card title="取值能自动格式的item" style={{ marginTop: 24 }}>
+        <FormatItem />
+      </Card>
+      <Card title="dayjs 测试" style={{ marginTop: 24 }}>
+        <DayjsForm></DayjsForm>
+      </Card>
       <Card title="表单测试">
         <Form form={form}>
           <Item name="fruit" label="水果">
@@ -50,6 +58,9 @@ export default function IndexPage() {
       </Card>
       <Card title="SVG测试" style={{ marginTop: 24 }}>
         <TreeForm></TreeForm>
+      </Card>
+      <Card title="dayjs 测试" style={{ marginTop: 24 }}>
+        <DayjsForm></DayjsForm>
       </Card>
     </div>
   );
